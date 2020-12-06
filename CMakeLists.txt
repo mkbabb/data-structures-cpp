@@ -1,9 +1,9 @@
 project(data_structures)
 cmake_minimum_required(VERSION 3.2)
 
-set(CMAKE_CXX_COMPILER "clang++")
+set(CMAKE_CXX_COMPILER "g++-10")
 
-add_compile_options(-fcoroutines-ts -stdlib=libc++ -std=c++2a -ggdb3)
+add_compile_options(-std=c++20)
 
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 
