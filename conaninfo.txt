@@ -1,0 +1,28 @@
+[settings]
+
+
+[requires]
+    fmt/7.Y.Z
+    range-v3/0.11.0
+
+[options]
+
+
+[full_settings]
+
+
+[full_requires]
+    fmt/7.1.2:6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6
+    range-v3/0.11.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[full_options]
+    fmt:fPIC=True
+    fmt:header_only=False
+    fmt:shared=False
+    fmt:with_fmt_alias=False
+
+[recipe_hash]
+
+
+[env]
+
