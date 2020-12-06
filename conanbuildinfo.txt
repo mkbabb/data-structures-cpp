@@ -1,9 +1,11 @@
 [includedirs]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/include
 /Users/mkbabb/.conan/data/range-v3/0.11.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include
 
 [libdirs]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/lib
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/lib
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib
 
 [bindirs]
 
@@ -12,11 +14,12 @@
 
 
 [builddirs]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/
 /Users/mkbabb/.conan/data/range-v3/0.11.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/cmake/Catch2
 
 [libs]
-fmt
+fmtd
 
 [system_libs]
 
@@ -50,10 +53,10 @@ fmt
 
 
 [includedirs_fmt]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/include
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/include
 
 [libdirs_fmt]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/lib
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/lib
 
 [bindirs_fmt]
 
@@ -62,10 +65,10 @@ fmt
 
 
 [builddirs_fmt]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6/
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/
 
 [libs_fmt]
-fmt
+fmtd
 
 [system_libs_fmt]
 
@@ -98,7 +101,7 @@ fmt
 
 
 [rootpath_fmt]
-/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6
+/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d
 
 [name_fmt]
 fmt
@@ -177,7 +180,74 @@ range-v3
 
 
 
+[includedirs_catch2]
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include
+
+[libdirs_catch2]
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib
+
+[bindirs_catch2]
+
+
+[resdirs_catch2]
+
+
+[builddirs_catch2]
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/cmake/Catch2
+
+[libs_catch2]
+
+
+[system_libs_catch2]
+
+
+[defines_catch2]
+
+
+[cppflags_catch2]
+
+
+[cxxflags_catch2]
+
+
+[cflags_catch2]
+
+
+[sharedlinkflags_catch2]
+
+
+[exelinkflags_catch2]
+
+
+[sysroot_catch2]
+
+
+[frameworks_catch2]
+
+
+[frameworkdirs_catch2]
+
+
+[rootpath_catch2]
+/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[name_catch2]
+catch2
+
+[version_catch2]
+2.13.2
+
+[generatornames_catch2]
+cmake_find_package=Catch2
+cmake_find_package_multi=Catch2
+
+[generatorfilenames_catch2]
+
+
+
+[USER_catch2]
 [USER_fmt]
 [USER_range-v3]
 [ENV_fmt]
 [ENV_range-v3]
+[ENV_catch2]

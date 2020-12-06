@@ -2,6 +2,7 @@
 
 
 [requires]
+    catch2/2.Y.Z
     fmt/7.Y.Z
     range-v3/0.11.0
 
@@ -12,7 +13,8 @@
 
 
 [full_requires]
-    fmt/7.1.2:6a83d7f783e7ee89a83cf2fe72b5f5f67538e2a6
+    catch2/2.13.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    fmt/7.1.2:407bc6dfc3b539e8fb6e77be46793e6e16fbd64d
     range-v3/0.11.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
 
 [full_options]
@@ -25,4 +27,5 @@
 
 
 [env]
-
+    CC=gcc
+    CXX=/usr/local/opt/gcc/bin/g++-10

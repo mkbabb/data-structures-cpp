@@ -13,6 +13,7 @@ class DataStructuresConan(ConanFile):
     def requirements(self):
         self.requires("fmt/7.1.2")
         self.requires("range-v3/0.11.0")
+        self.requires("catch2/2.13.2")
 
     def configure(self):
         return super().configure()
