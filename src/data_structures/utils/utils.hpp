@@ -1,38 +1,46 @@
-#include <concepts>
 #include <iterator>
 #include <optional>
-#include <ranges>
 
 #pragma once
 
+namespace ds { namespace utils {
+
 template<class Func>
-struct y_combinator
+struct y_combinator_impl
 {
     Func func;
 
+    explicit y_combinator_impl(Func&& func)
+      : func{std::forward<Func>(func)}
+    {}
+
     template<class... Args>
-    decltype(auto) operator()(Args&&... args) const
+    auto operator()(Args&&... args) const -> decltype(auto)
     {
         return func(*this, std::forward<Args>(args)...);
     }
 };
 
-template<class T>
-concept OrderedContainer = std::ranges::sized_range<T>&&
-    std::ranges::random_access_range<T>&& std::totally_ordered<T>;
+constexpr auto
+y_combinator(auto&& func)
+{
+    using Func = std::remove_cvref_t<decltype(func)>;
+    return y_combinator_impl(std::forward<Func>(func));
+}
 
-constexpr auto default_comparator = [](auto x, auto y) -> int {
+// template<class T>
+// concept OrderedContainer = std::ranges::sized_range<T>&&
+//     std::ranges::random_access_range<T>&& std::totally_ordered<T>;
+
+constexpr auto default_comparator = [](const auto& x, const auto& y) -> int {
     return x < y ? -1 : x > y ? 1 : 0;
 };
 
-template<
-    OrderedContainer Container,
-    class V = std::ranges::range_value_t<Container>,
-    class Comparator = decltype(default_comparator)>
+template<class Container, class V, class Comparator = decltype(default_comparator)>
 int
 bisect(
     Container&& arr,
-    V&& x,
+    const V&& x,
     Comparator comparator = default_comparator,
     bool left = true,
     bool negate_found = true,
@@ -95,3 +103,5 @@ is_power_of(int n, int b)
         return n == 1;
     }
 }
+
+}}
