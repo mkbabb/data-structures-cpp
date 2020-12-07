@@ -1,19 +1,20 @@
 #include "src/data_structures/utils/utils.hpp"
 
-#include <concepts>
 #include <range/v3/view/filter.hpp>
 #include <range/v3/view/transform.hpp>
 #include <tuple>
 #include <vector>
+
+#pragma once
+
+namespace ds { namespace tree {
 
 template<class T>
 using List = std::vector<T>;
 
 using namespace ranges;
 
-#pragma once
-
-template<std::totally_ordered T>
+template<class T>
 class TreeNode
 {
     int tree_order;
@@ -87,14 +88,14 @@ class TreeNode
     }
 };
 
-template<std::totally_ordered T, class Comparator = decltype(default_comparator)>
+template<class T, class Comparator = decltype(utils::default_comparator)>
 class Tree
 {
     int order;
     Comparator comparator;
     TreeNode<T> root;
 
-    Tree(int order, Comparator comparator = default_comparator)
+    Tree(int order, Comparator comparator = utils::default_comparator)
     {
         this->order;
         order;
@@ -108,10 +109,10 @@ class Tree
         return TreeNode(std::forward<Args>(args)...);
     }
 
-    template<OrderedContainer Container>
+    template<class Container>
     int tree_bisect(Container&& arr, T&& x, bool left = true, bool negate_found = true)
     {
-        return bisect(arr, x, this->comparator, left, negate_found);
+        return utils::bisect(arr, x, this->comparator, left, negate_found);
     }
 
     auto find(T input_value) -> std::tuple<int, TreeNode<T>>
@@ -172,3 +173,5 @@ class Tree
         }
     }
 };
+
+}}
