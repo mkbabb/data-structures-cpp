@@ -38,13 +38,13 @@ endmacro()
 #################
 ###  FMT
 #################
-set(CONAN_FMT_ROOT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d")
-set(CONAN_INCLUDE_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/include")
-set(CONAN_LIB_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/lib")
+set(CONAN_FMT_ROOT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7")
+set(CONAN_INCLUDE_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/include")
+set(CONAN_LIB_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/lib")
 set(CONAN_BIN_DIRS_FMT )
 set(CONAN_RES_DIRS_FMT )
 set(CONAN_SRC_DIRS_FMT )
-set(CONAN_BUILD_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/")
+set(CONAN_BUILD_DIRS_FMT "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/")
 set(CONAN_FRAMEWORK_DIRS_FMT )
 set(CONAN_LIBS_FMT fmtd)
 set(CONAN_PKG_LIBS_FMT fmtd)
@@ -151,9 +151,17 @@ set(CONAN_LIBS_CATCH2 ${CONAN_PKG_LIBS_CATCH2} ${CONAN_SYSTEM_LIBS_CATCH2} ${CON
 
 ### Definition of global aggregated variables ###
 
-set(CONAN_PACKAGE_NAME data_structures)
-set(CONAN_PACKAGE_VERSION 0.1)
+set(CONAN_PACKAGE_NAME None)
+set(CONAN_PACKAGE_VERSION None)
 
+set(CONAN_SETTINGS_ARCH "x86_64")
+set(CONAN_SETTINGS_ARCH_BUILD "x86_64")
+set(CONAN_SETTINGS_BUILD_TYPE "Debug")
+set(CONAN_SETTINGS_COMPILER "clang")
+set(CONAN_SETTINGS_COMPILER_LIBCXX "libc++")
+set(CONAN_SETTINGS_COMPILER_VERSION "11")
+set(CONAN_SETTINGS_OS "Macos")
+set(CONAN_SETTINGS_OS_BUILD "Macos")
 
 set(CONAN_DEPENDENCIES fmt range-v3 catch2)
 # Storing original command line args (CMake helper) flags
@@ -163,10 +171,10 @@ set(CONAN_CMD_SHARED_LINKER_FLAGS ${CONAN_SHARED_LINKER_FLAGS})
 set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 # Defining accumulated conan variables for all deps
 
-set(CONAN_INCLUDE_DIRS "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/include"
+set(CONAN_INCLUDE_DIRS "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/include"
 			"/Users/mkbabb/.conan/data/range-v3/0.11.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include"
 			"/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/include" ${CONAN_INCLUDE_DIRS})
-set(CONAN_LIB_DIRS "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/lib"
+set(CONAN_LIB_DIRS "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/lib"
 			"/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib" ${CONAN_LIB_DIRS})
 set(CONAN_BIN_DIRS  ${CONAN_BIN_DIRS})
 set(CONAN_RES_DIRS  ${CONAN_RES_DIRS})
@@ -178,7 +186,7 @@ set(CONAN_FRAMEWORKS  ${CONAN_FRAMEWORKS})
 set(CONAN_FRAMEWORKS_FOUND "")  # Will be filled later
 set(CONAN_DEFINES  ${CONAN_DEFINES})
 set(CONAN_BUILD_MODULES_PATHS  ${CONAN_BUILD_MODULES_PATHS})
-set(CONAN_CMAKE_MODULE_PATH "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/407bc6dfc3b539e8fb6e77be46793e6e16fbd64d/"
+set(CONAN_CMAKE_MODULE_PATH "/Users/mkbabb/.conan/data/fmt/7.1.2/_/_/package/748830586d70ff03b48148bb25c70b351e059bb7/"
 			"/Users/mkbabb/.conan/data/range-v3/0.11.0/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/"
 			"/Users/mkbabb/.conan/data/catch2/2.13.2/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/lib/cmake/Catch2" ${CONAN_CMAKE_MODULE_PATH})
 
